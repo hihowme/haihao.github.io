@@ -5,6 +5,7 @@ permalink: /research/
 description:
 nav: true
 nav_order: 1
+show_selected_wip: false
 _styles: |
   .post-header {
     display: none;
@@ -75,7 +76,7 @@ My work combines economics, statistics, and multi-modal machine learning to unde
 </ol>
 </section>
 
-<!--
+{% if page.show_selected_wip %}
 <section class="research-section">
 <h3>Selected Work in Progress</h3>
 
@@ -85,4 +86,4 @@ My work combines economics, statistics, and multi-modal machine learning to unde
   <li><strong>Haihao Guo</strong>, P. B. (Seethu) Seetharaman. "Impact of Audio vs. Visual on Diffusion of Music Videos."</li>
 </ol>
 </section>
--->
+{% endif %}
